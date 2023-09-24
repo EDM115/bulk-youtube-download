@@ -17,6 +17,9 @@ copy(Array.from(new Set(Array.from(document.links).filter((l) => l.href?.include
 ```
 4. Run the `dl.bat` file
 
+## Tutorial in video :
+https://raw.githubusercontent.com/EDM115/bulk-youtube-download/master/tutorial.mp4
+
 ## Error ?
 
 - The `yt.txt` should look like this :
