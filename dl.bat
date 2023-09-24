@@ -71,7 +71,7 @@ for /l %%i in (1,1,%count%) do (
 )
 
 echo ----- Download done ! -----
-echo TYour files are in the downloads folder
+echo Your files are in the downloads folder
 echo.
 echo Follow me on GitHub :
 echo https://github.com/EDM115
