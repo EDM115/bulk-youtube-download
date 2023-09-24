@@ -66,12 +66,12 @@ for /l %%i in (1,1,%count%) do (
     set "current_url=!url[%%i]!"
     set "current_url=!current_url:"=!"
 	set "current_url=!current_url:,=!"
-    yt-dlp.exe --ffmpeg-location "ffmpeg.exe" -f bestvideo+bestaudio/best --embed-subs --embed-thumbnail --embed-metadata --no-playlist -o "%%USERPROFILE%%\Downloads\%%(title)s [%%(id)s].%%(ext)s" !current_url!
+    yt-dlp.exe --ffmpeg-location "ffmpeg.exe" -f bestvideo+bestaudio/best --embed-subs --embed-thumbnail --embed-metadata --no-playlist -o "downloads\%%(title)s [%%(id)s].%%(ext)s" !current_url!
 	echo.
 )
 
 echo ----- Download done ! -----
-echo To find your files, do Win + R and type %USERPROFILE%\Downloads
+echo TYour files are in the downloads folder
 echo.
 echo Follow me on GitHub :
 echo https://github.com/EDM115
