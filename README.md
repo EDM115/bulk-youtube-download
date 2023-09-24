@@ -9,7 +9,7 @@
 ```javascript
 copy(Array.from(new Set(Array.from(document.links).filter((l) => l.href?.includes('watch?v=')).map(x => x.href.split('&')[0]))))
 ```
-Then hit enter
+Then hit enter  
 3. Open the `yt.txt` file, delete everything and paste (Ctrl + V)
 *if you see no link, run the following command instead :*
 ```javascript
