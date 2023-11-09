@@ -1,0 +1,18 @@
+repo_name: EDM115/bulk-youtube-download
+report_id: 03b5684bec7f7fac3b72526052d8138b
+repo_type: Public
+timestamp: '2023-11-09T16:03:02+00:00'
+requested_by: EDM115
+provider: github
+branch: master
+detected_tools_count: 1
+tools:
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
