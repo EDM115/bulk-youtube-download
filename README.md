@@ -18,7 +18,8 @@ copy(Array.from(new Set(Array.from(document.links).filter((l) => l.href?.include
 4. Run the `dl.bat` file
 
 ## Tutorial in video :
-https://raw.githubusercontent.com/EDM115/bulk-youtube-download/master/tutorial.mp4
+https://github.com/EDM115/bulk-youtube-download/assets/82015596/8ab3de7d-27ca-42b4-890b-e596f1592e8e
+*(also available in the repo)*
 
 ## Error ?
 
