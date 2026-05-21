@@ -1,4 +1,3 @@
-```bash
 #!/usr/bin/env bash
 set -u
 set -o pipefail
@@ -113,4 +112,3 @@ echo
 echo "🫂 Follow me on GitHub :"
 echo "   https://github.com/EDM115"
 echo
-```
