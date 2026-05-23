@@ -1,3 +1,4 @@
+```bash
 #!/usr/bin/env bash
 set -u
 set -o pipefail
@@ -74,7 +75,7 @@ echo "🎯 $count links found !"
 echo
 
 DEFAULT_ARGS=(
-  -f "bestvideo[height<=1080]+bestaudio/best[height<=1080]"
+  -f "bestvideo+bestaudio/best"
   --merge-output-format mp4
   --embed-subs
   --embed-thumbnail
@@ -112,3 +113,4 @@ echo
 echo "🫂 Follow me on GitHub :"
 echo "   https://github.com/EDM115"
 echo
+

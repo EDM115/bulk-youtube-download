@@ -56,7 +56,7 @@ if !count! EQU 0 (
 echo 🎯 !count! links found !
 echo.
 
-set DEFAULT_ARGS=-f "bestvideo+bestaudio/best" --merge-output-format mp4 --embed-subs --embed-thumbnail --embed-metadata --embed-chapters --windows-filenames --progress --console-title --concurrent-fragments 4 --retries 10 --fragment-retries 10 --ignore-errors --continue -o "downloads\%%(playlist_title,Unknown Playlist)s\%%(playlist_index)s - %%(title)s [%%(id)s].%%(ext)s"
+set DEFAULT_ARGS=-f "bestvideo+bestaudio/best" --merge-output-format mp4 --embed-subs --embed-thumbnail --embed-metadata --embed-chapters --windows-filenames --progress --console-title --concurrent-fragments 4 --retries 10 --fragment-retries 10 --ignore-errors --continue --download-archive downloaded.txt -o "downloads\%%(playlist_title,Unknown Playlist)s\%%(playlist_index)s - %%(title)s [%%(id)s].%%(ext)s"
 
 
 @REM set DEFAULT_ARGS=-f "bestvideo+bestaudio/best" --embed-subs --embed-thumbnail --embed-metadata --embed-chapters --no-playlist --windows-filenames --progress --console-title -o "downloads\%%(title)s [%%(id)s].%%(ext)s"
