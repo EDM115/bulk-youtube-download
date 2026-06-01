@@ -33,8 +33,9 @@ Works with Youtube and [all other sites supported by `yt-dlp`](https://github.co
     "https://www.youtube.com/watch?v=h2csePLbahQ",
     "https://www.youtube.com/watch?v=-m1EzV-i3WI",
     "https://www.youtube.com/watch?v=-JdZsKzYWhI",
-    "https://www.youtube.com/playlist?list=PLxxxxxxxx",
-    "https://www.youtube.com/@channel/videos"
+    "https://www.youtube.com/playlist?list=PLliBvQE3gg9doyZ2XgGOFMn4FHzdZquuZ",
+    "https://www.youtube.com/@snaptic.3d/videos",
+    "https://www.youtube.com/@snaptic.3d/shorts"
   ]
   ```
   > [!NOTE]  
