@@ -1,4 +1,3 @@
-```bash
 #!/usr/bin/env bash
 set -u
 set -o pipefail
@@ -21,7 +20,6 @@ require_cmd() {
     echo "   💡 Tip : install it/add it to your PATH"
     return 1
   fi
-
   echo "🔰 Found $1"
   return 0
 }
@@ -32,7 +30,6 @@ require_cmd ffmpeg || fatal
 require_cmd ffprobe || fatal
 
 LINKS_FILE="links.txt"
-
 if [[ ! -f "$LINKS_FILE" ]]; then
   echo "❌ $LINKS_FILE not found in \"$(pwd)\""
   fatal
@@ -76,23 +73,17 @@ echo
 
 DEFAULT_ARGS=(
   -f "bestvideo+bestaudio/best"
-  --merge-output-format mp4
   --embed-subs
   --embed-thumbnail
   --embed-metadata
   --embed-chapters
+  --yes-playlist
   --progress
   --console-title
   --concurrent-fragments 4
-  --retries 10
-  --fragment-retries 10
   --ignore-errors
-  --continue
-  --download-archive downloaded.txt
-  --sleep-requests 1
-  --sleep-interval 2
-  --max-sleep-interval 5
-  -o "downloads/%(uploader|UnknownUploader)s/%(playlist_title|Singles)s/%(playlist_index|1)s - %(title)s [%(id)s].%(ext)s"
+  -P "downloads"
+  -o "%(playlist_title|.)s/%(playlist_index&{} - |)s%(title)s [%(id)s].%(ext)s"
 )
 
 for i in "${!urls[@]}"; do
@@ -113,4 +104,3 @@ echo
 echo "🫂 Follow me on GitHub :"
 echo "   https://github.com/EDM115"
 echo
-
