@@ -38,12 +38,12 @@ Works with Youtube and [all other sites supported by `yt-dlp`](https://github.co
     "https://www.youtube.com/@snaptic.3d/shorts"
   ]
   ```
-  > [!NOTE]  
-  > Supported URL types :
-  > - Single videos
-  > - Playlists
-  > - Channel `/videos` pages
-  > - Mixed URLs together
+> [!NOTE]  
+> Supported URL types :
+> - Single videos
+> - Playlists
+> - Channel `/videos` pages
+> - Mixed URLs together
 
 - Open a terminal/command prompt in the folder where you put the script and the `links.txt` file
 - Run the script :
