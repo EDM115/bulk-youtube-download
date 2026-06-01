@@ -56,7 +56,7 @@ if !count! EQU 0 (
 echo 🎯 !count! links found !
 echo.
 
-set DEFAULT_ARGS=-f "bestvideo+bestaudio/best" --embed-subs --embed-thumbnail --embed-metadata --embed-chapters --no-playlist --windows-filenames --progress --console-title -o "downloads\%%(title)s [%%(id)s].%%(ext)s"
+set DEFAULT_ARGS=-f "bestvideo+bestaudio/best" --embed-subs --embed-thumbnail --embed-metadata --embed-chapters --yes-playlist --windows-filenames --progress --console-title --concurrent-fragments 4 --ignore-errors -P "downloads" -o "%%(playlist_title|.)s/%%(playlist_index&{} - |)s%%(title)s [%%(id)s].%%(ext)s"
 
 for /l %%i in (1,1,!count!) do (
   echo 🔗 Processing link %%i/!count!

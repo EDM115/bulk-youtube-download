@@ -62,6 +62,7 @@ while IFS= read -r line || [[ -n "$line" ]]; do
 done < "$LINKS_FILE"
 
 count="${#urls[@]}"
+
 if [[ "$count" -eq 0 ]]; then
   echo "❌ No URLs found in $LINKS_FILE !"
   fatal
@@ -76,10 +77,13 @@ DEFAULT_ARGS=(
   --embed-thumbnail
   --embed-metadata
   --embed-chapters
-  --no-playlist
+  --yes-playlist
   --progress
   --console-title
-  -o "downloads/%(title)s [%(id)s].%(ext)s"
+  --concurrent-fragments 4
+  --ignore-errors
+  -P "downloads"
+  -o "%(playlist_title|.)s/%(playlist_index&{} - |)s%(title)s [%(id)s].%(ext)s"
 )
 
 for i in "${!urls[@]}"; do
